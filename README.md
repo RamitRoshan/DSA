@@ -128,9 +128,11 @@ HashMap & HashSet-based problems:
 
 ### 📊 Sorting
 - Bubble Sort
+- Selection Sort
 - Insertion Sort
 - Merge Sort
 - Quick Sort
+- Heap Sort
 - Counting/Radix Sort (if applicable)
 
 ### 🔍 Searching
