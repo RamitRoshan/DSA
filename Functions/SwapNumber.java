@@ -4,6 +4,8 @@ public class SwapNumber {
     public static void main(String[] args) {
          swap(3,4);
     }
+
+
     public static void swap(int a, int b){
         int temp = a;
         a = b;
