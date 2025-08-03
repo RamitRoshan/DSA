@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 //Define a method to find out if a number is prime or not.
 public class Prime {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter  your number: ");
