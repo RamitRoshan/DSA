@@ -9,6 +9,7 @@ public class PrimebtwTwoNumber {
         System.out.print("The prime numbers btw given range is: ");
          primeRange(a,b);
     }
+
     public static boolean isPrime(int n){
         if(n<=1){
             return false;
