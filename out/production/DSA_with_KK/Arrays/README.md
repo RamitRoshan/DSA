@@ -318,6 +318,16 @@ public class Example {
 ```
 
 
+#### Internal Working of ArrayList: 
+- Size is fixed Internally.
+- Say Arraylist fills by some amount
+    - It will create a new empty arraylist of say, double the size of arraylist initially.
+    - Old elements are copied in the new arraylist.
+    - Old one is deleted
+- when the size of arraylist is filled half by array element, then the size it becomes double, and it keeps on going with every double size.
+
+
+
 ### **Common Methods:**
 | Method                | Description                             |
 | --------------------- | --------------------------------------- |
