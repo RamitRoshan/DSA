@@ -5,7 +5,7 @@ public class Max {
     public static void main(String[] args) {
         int[] arr = {1, 3, 7, 23, 9, 18};
         System.out.println("Maximum value in the given array is: " + max(arr));
-        System.out.println("Maximum value in the given range is: " + maxRange(arr,0, 2 ));
+        System.out.println("Maximum value in the given range is: " + maxRange(arr,1, 4 ));
     }
     //imagine that array is not empty (that why we write int max = arr[0]
     //if it will be empty then int max = INTEGER.MIN_VALUE;

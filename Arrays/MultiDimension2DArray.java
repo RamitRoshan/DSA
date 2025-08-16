@@ -27,7 +27,7 @@ public class MultiDimension2DArray {
 //                {6,7, 8, 9} //2nd index -> arr[2] = {6,7,8,9}
 //        };
 
-        int[][] arr = new int[3][3];
+        int[][] arr = new int[4][3];
         System.out.println(arr.length); //it will give length of rows(no of rows)
 
         //input
