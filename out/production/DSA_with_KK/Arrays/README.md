@@ -1,6 +1,6 @@
 # Arrays
 
-You can view the detailed notes here: [📄 Notes PDF](notes.pdf)
+You can view the detailed notes here: [📄Notes PDF](notes.pdf)
 
 - If we have to store the roll number of five students then we can do it like: <br>
 
@@ -41,7 +41,7 @@ like: we cannot write , 1st is int, 2nd one is string , 3rd is float in the same
 e.g: int[ ] rnos3 = {23, "ramit", 45, 32};  ❌
 
 
-- If we make a integer array, then it  should be array only. If we make a boolean array, then it should be boolean only. If It contains string, then it should be strings only.
+- If we make a integer array, then it  should be Integer only. If we make a boolean array, then it should be boolean only. If It contains string, then it should be strings only.
 
 
 ````
@@ -51,7 +51,7 @@ ros = new int[5]; //initialisation: here actual object is being created in the m
 ````
 
 Q) What is the new keyword in Java? <br>
-Ans: The new keyword is used to create objects and arrays in Java. <br>
+Ans: The new keyword is used to create  an objects and arrays in Java. <br>
 It allocates memory in the heap and returns a reference to the created object/array.
 (The new keyword is used to create an objects in heap memory)
 
@@ -82,7 +82,7 @@ going to be continuous or not . <br> why ?
 ![img.png](img.png)
 
 
-- JLS(Java language specification): here it is clearly mentioned, Head objects are not continuous.
+- JLS(Java language specification): here it is clearly mentioned, Heap objects are not continuous.
 
 - Array objects are also in the Heap area, hence array objects in java may not be continuous.
   (even the defination of arrays: say it's a continuous data, but in java internally it may not be continuous). -> depends on JVM.
