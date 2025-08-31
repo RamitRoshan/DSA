@@ -70,6 +70,7 @@ A beginner-friendly learning roadmap curated by **[Striver](https://www.youtube.
 
 ## 🧪 Practice
 
+- [Strivers A2Z](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
 - [LeetCode](https://leetcode.com/problemset/)
 - [GFG](https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions)
 
