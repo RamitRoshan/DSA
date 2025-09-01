@@ -201,3 +201,104 @@ In Java, you can convert values like integers, arrays, or objects into strings u
    System.out.println(Arrays.toString(arr));    // [1, 2, 3, 4]
 
 ```
+
+## StringBuilder
+
+StringBuilder is mutable (can be modified without creating new objects).
+
+Operations like append, insert, delete, reverse are more efficient.
+
+##### Best when:
+
+- You need to do a lot of modifications (e.g., concatenation inside loops).
+
+- You’re solving coding problems that require string construction step by step.
+
+Example: building output in problems like reversing words, generating substrings, or constructing JSON/XML-like strings.
+
+```
+   StringBuilder sb = new StringBuilder("Hello");
+   sb.append(" World");
+   System.out.println(sb);  // Hello World
+```
+
+##### ✅ Rule of Thumb
+
+- Use String → when string is fixed or rarely modified. <br>
+or <br>
+  The string doesn’t change much (e.g., printing messages, storing small words).
+<br>
+
+
+- Use StringBuilder → when building or modifying strings repeatedly (especially inside loops). <br>
+If you see yourself writing **s = s + something** inside a loop, switch to StringBuilder
+
+
+## Use StringBuilder when:
+
+1. Building a string inside a loop:
+- Repeated concatenation (+) → costly with String. <br> 
+Example: generating "abcabcabc..." or concatenating numbers in a loop.
+
+2. Reversing or modifying strings:
+- StringBuilder has built-in reverse(), delete(), insert(). <br>
+Example: palindrome check, reverse words, edit distance style problems.
+
+3. Dynamic construction of results:
+- When the final output string is created step by step. <br>
+Example:
+     - Convert array → string with separators. 
+     - Build patterns like "a1b2c3". 
+     - Serialize/deserialize data.
+
+4. When performance matters (large input)
+- Competitive programming or interview problems with 10^5+ characters. <br>
+Example: repeatedly processing substrings or concatenating in loops.
+
+
+###### Examples:
+```
+public class Stringbld {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i< 26; i++){
+            char ch = (char) ('a' + i);
+            sb.append(ch);
+        }
+        System.out.println(sb.toString());
+    }
+}
+O/p: abcdefghijklmnopqrstuvwxyz
+
+        //.strip() => used to remove extra spaces
+        System.out.println("        Sanu     ".strip());  //sanu
+
+```
+Note:
+StringBuilder helps us build and change strings easily. <br>
+**.toString()** changes it into a normal String. <br>
+We use it when we want to print, compare, or store the final text.
+
+
+### split() in Java
+
+The split() method is used to break a string into parts based on a given delimiter (like space, comma, etc.).
+
+It returns an array of strings.
+
+- Examples:
+```
+   String text = "apple,banana,orange";
+   String[] fruits = text.split(",");
+
+   for (String f : fruits) {
+      System.out.println(f);
+   }
+   
+O/P:
+apple
+banana
+orange
+
+
+```
