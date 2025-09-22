@@ -74,3 +74,17 @@ class LinearSearchExample {
         }
     }
 }
+```
+
+# Binary Search 
+
+### Q). What is Binary Search Algorithm?
+Binary Search is defined as a searching algorithm, used in a **sorted array** by repeatedly dividing the search interval
+in half. 
+
+
+### Time and Space Complexity
+TC: Best → O(1), Average/Worst → O(log n)
+
+SC: Iterative → O(1), Recursive → O(log n)
+
