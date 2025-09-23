@@ -88,3 +88,54 @@ TC: Best → O(1), Average/Worst → O(log n)
 
 SC: Iterative → O(1), Recursive → O(log n)
 
+
+# Order-Agnostic Binary Search
+
+**"Order-agnostic"** means it doesn’t care whether the array is sorted in ascending or descending order.
+
+The algorithm first checks the order of sorting, and then applies the correct binary search logic accordingly.
+
+
+## ⚡ Steps of Order-Agnostic Binary Search
+
+1. **Check order of array**
+    ```java
+    boolean isAsc = array[start] < array[end];
+    ```
+    - If `true` → array sorted **ascending**
+    - If `false` → array sorted **descending**
+
+2. **Binary search logic changes depending on order**
+
+   **Ascending case:**
+    - If `target < mid` → search left
+    - If `target > mid` → search right
+
+   **Descending case:**
+    - If `target > mid` → search left
+    - If `target < mid` → search right
+
+3. Continue until element is found or search space is empty.
+
+---
+
+## ✅ Example
+
+**Array in Ascending order:**
+```text
+[-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89]
+target = 22
+
+→ Found at index 10
+ 
+```
+
+**Array in Descending order:**
+```text
+
+[99, 80, 75, 60, 50, 30, 10, 0, -5, -20]
+target = 50
+
+
+→ Found at index 4
+
