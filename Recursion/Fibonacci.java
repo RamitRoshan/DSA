@@ -3,7 +3,7 @@ package Recursion;
 public class Fibonacci {
     public static void main(String[] args) {
         System.out.print("Fibonacci number of n is: "  );
-        System.out.println(fibo(6));
+        System.out.println(fibo(4));
     }
     public static int fibo(int n){
         //base condition i.e if n is 1 = return 1 and same for 0
