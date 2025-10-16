@@ -1,5 +1,6 @@
-package Recursion;
+package Recursion.easy;
 
+//Binary search using recursion
 public class BinarySearch {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 55, 66, 78};
