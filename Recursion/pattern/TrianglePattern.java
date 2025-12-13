@@ -20,13 +20,14 @@ public class TrianglePattern {
         }
 
         if(col < row){
-            System.out.print("*");
-            //increase col by 1 and print *
+            System.out.print("*" + " ");
+            //increase col by 1, row will be same and print *
             triangle(row, col+1);
 
         }
         //entire line is finished and here no. of row = no. of col
-        //now we need a new line i.e row 3 (before it was row 4)
+        //now we need a new line i.e reduce the row and reset the colm with 0.
+        // row 3 (before it was row 4)
         else{
 
             //adding new lines
