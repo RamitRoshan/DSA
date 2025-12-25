@@ -20,5 +20,17 @@ public class basicsll {
         Node d = new Node(8);
         Node e = new Node(16);
 
+        //5 -> 3 -> 9 -> 8 -> 16
+        //linking b with a
+//        a.next = b;
+//        System.out.println(a.next); //O.P: LinkedList.basicsll$Node@5f184fc6
+//        System.out.println(b);   //same: LinkedList.basicsll$Node@5f184fc6
+//        System.out.println(c);
+
+        a.next = b;
+        b.next = c;
+        c.next = d;
+        d.next = e;
+        System.out.println(c.next.data);
     }
 }
