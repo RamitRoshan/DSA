@@ -1,8 +1,9 @@
 package LinkedList;
 
-//Displaying the LinkedList using for loop.
+//Writing the code for displaying the LinkedList on the basis of Head Node.
+// here, size of linked list will not be given.
 
-public class DisplayLL {
+public class DisplayLLHead {
 
     public static class Node{
         int data;
@@ -13,8 +14,7 @@ public class DisplayLL {
             this.data = data;
         }
     }
-    public static void main(String[] args) {
-        //5-> 3-> 9-> 8-> 16
+    public static void main (String[] args){
         Node a = new Node(5);
         Node b = new Node(3);
         Node c = new Node(9);
@@ -27,12 +27,11 @@ public class DisplayLL {
         c.next = d;
         d.next = e;
 
+        //displaying the LinkedList on the basis of Heading Nodes
         Node temp = a;
-        for(int i=1; i<=5; i++){
+        while(temp != null){ //printing the list
             System.out.print(temp.data + " ");
-            temp = temp.next;
+            temp = temp.next;  // O/P: 5 3 9 8 16
         }
     }
 }
-
-// O/P: 5 3 9 8 16
