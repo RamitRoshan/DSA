@@ -5,6 +5,8 @@ package LinkedList;
 int a = getAt(3); ans = 13
 i.e
 index 3 = 12
+
+// Implemented Delete at index also
 */
 public class getElement {
 
@@ -90,6 +92,20 @@ public class getElement {
             }
             return count;
         }
+
+        //delete at index
+        void deleteAt(int idx){
+            if(idx == 0) {
+                head = head.next;
+                return;
+            }
+            Node temp = head; //this temp will traverse the linked list
+            for(int i=1; i<=idx-1; i++){
+                temp = temp.next;  //move next, next
+            }
+            temp.next = temp.next.next;
+            tail = temp;
+        }
     }
     public static void main(String[] args) {
 
@@ -104,5 +120,9 @@ public class getElement {
         ll.display();  // 177 -> 23 ->  11->  44 -> 2
 
         System.out.println(ll.getAt(3)); //index 3 = 44
+
+        ll.deleteAt(4);
+        ll.display();
+        System.out.println(ll.tail.data);
     }
 }
