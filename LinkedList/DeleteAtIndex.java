@@ -29,8 +29,6 @@ public class DeleteAtIndex {
                 head = head.next;
                 return;
             }
-
-
             Node temp = head; //this temp will traverse the linked list
             for(int i=1; i<=idx-1; i++){
                 temp = temp.next;  //move next, next

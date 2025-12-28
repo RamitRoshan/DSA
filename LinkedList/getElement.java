@@ -6,7 +6,7 @@ int a = getAt(3); ans = 13
 i.e
 index 3 = 12
 
-// Implemented Delete at index also
+// Implementing Delete at index, here also
 */
 public class getElement {
 
@@ -104,7 +104,10 @@ public class getElement {
                 temp = temp.next;  //move next, next
             }
             temp.next = temp.next.next;
-            tail = temp;
+//            tail = temp;
+            if (temp.next == tail) {
+                tail = temp;
+            }
         }
     }
     public static void main(String[] args) {
