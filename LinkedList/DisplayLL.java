@@ -35,4 +35,4 @@ public class DisplayLL {
     }
 }
 
-// O/P: 5 3 9 8 16
+// Output : 5 3 9 8 16
