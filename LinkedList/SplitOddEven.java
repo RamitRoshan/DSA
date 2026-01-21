@@ -23,7 +23,6 @@ public class SplitOddEven {
             this.data = data;
         }
     }
-
     //print the list
     public static void display(Node head){
         while (head != null){
@@ -82,10 +81,10 @@ public class SplitOddEven {
             head = head.next;
         }
 
-        System.out.println("Odd List: ");
+        System.out.print("Odd List: ");
         display(oddDummy.next);
 
-        System.out.println("Even List: ");
+        System.out.print("Even List: ");
         display(evenDummy.next);
     }
 }
