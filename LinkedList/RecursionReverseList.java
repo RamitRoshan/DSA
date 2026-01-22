@@ -14,12 +14,26 @@ public class RecursionReverseList {
         }
     }
 
-    //displaying the linked list using fns
+    //code to reverse the linkedlist
+    public static Node reverse(Node head){
+        //base cond.
+        if(head.next ==null) return head; //when we're at last node
+        //in reverse 1st call then work
+        Node newHead = reverse(head.next); //call
+        head.next.next = head; // interchanging the connection(work)
+        head.next = null; //pointing null after interchange the connections.
+        return newHead;
+    }
+
+    //displaying the linked list using recursions & in recursion we can't use loop
     public static void display(Node head){
-        while(head != null){
-            System.out.print(head.data+ " ");
-            head = head.next;
+        //base conditions
+        if(head == null){
+            System.out.println();
+            return;
         }
+        System.out.print(head.data + " "); //work
+        display(head.next); //call
     }
     public static void main(String[] args) {
         Node a = new Node(3);
@@ -38,5 +52,7 @@ public class RecursionReverseList {
         display(a);
 
         System.out.print("Reverse List is : ");
+        Node r = reverse(a);
+        display(r);
     }
 }
