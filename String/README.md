@@ -41,7 +41,7 @@ String a = "Ramit Roshan
 ````
 - Object (Ramit Roshan) point to the heap memory and Reference variable(a), points to the stack memory.
 
-#### Q). Stack memory :- When we declare 'a' variable <br>
+#### Q). Stacks memory :- When we declare 'a' variable <br>
 e.g: int a = 10; <br>
 so, here the reference variable is stored in stack memory. <br>
 
@@ -84,7 +84,7 @@ String b = "Kunal"; <br>
 It will point to the same object, In what Scenario will this be **two Objects?**
 
 ### How to Create diff. Objects of Same Values
-- here, a & b is in Stack memory and 'Kunal' is out of Pool, but in the Heap memory.
+- here, a & b is in Stacks memory and 'Kunal' is out of Pool, but in the Heap memory.
 - We also use new String to create two diff. Objects.
 
 ![img_5.png](img_5.png)

@@ -86,7 +86,7 @@ going to be continuous or not . <br> why ?
 
 - Array objects are also in the Heap area, hence array objects in java may not be continuous.
   (even the defination of arrays: say it's a continuous data, but in java internally it may not be continuous). -> depends on JVM.
-- Heap memory and Stack memory depends on JVM.
+- Heap memory and Stacks memory depends on JVM.
 
 
 ## Index of an Array
@@ -106,7 +106,7 @@ String[] arr = new String[4];
 System.out.println(arr[0]);  //null
 ````
 
-- Primitive-datatype(int, char,boolean.....) are stored in the Stack Memory. 
+- Primitive-datatype(int, char,boolean.....) are stored in the Stacks Memory. 
 - all the other objects like: string type, array type or hashmap
 , all the objects or the classes that we are making . These are stored in the Heap memory.
 
