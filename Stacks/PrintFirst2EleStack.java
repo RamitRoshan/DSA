@@ -17,6 +17,8 @@ public class PrintFirst2EleStack {
         st.push(5);
         st.push(34);
 
+        System.out.println(st);
+
         //delete ele till it is greater than > 2 ele
         while (st.size() > 2){
             st.pop();
