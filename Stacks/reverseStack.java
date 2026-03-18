@@ -32,7 +32,7 @@ public class reverseStack {
 
         //finally going to reverse the stack in the original stack
         while(at.size()>0){
-            st.push(at.pop());
+            st.push(at.pop()); //push in st and pop in at
         }
         System.out.println("Reverse ele in the original stack: " + st);
     }
