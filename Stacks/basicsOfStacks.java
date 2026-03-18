@@ -15,7 +15,7 @@ public class basicsOfStacks {
         st.push(23);
         st.push(90);
         st.push(5);
-        //last ele pushed into stack
+        //last ele pushed into stack (or top element)
         st.push(34);
 
         //peek -> it returns the top most element of the stack

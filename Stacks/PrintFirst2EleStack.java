@@ -3,7 +3,7 @@ package Stacks;
 import java.util.Stack;
 
 //Print first 2 ele in the stack and to get it we have to delete rest off the ele.
-public class PrintFirst2 {
+public class PrintFirst2EleStack {
     public static void main(String[] args) {
 
         //Declaring stack
@@ -17,13 +17,13 @@ public class PrintFirst2 {
         st.push(5);
         st.push(34);
 
-        //delete ele till > 2
+        //delete ele till it is greater than > 2 ele
         while (st.size() > 2){
             st.pop();
         }
 
         //print top most ele(after deletion)
-        System.out.println(st.peek());
+        System.out.println(st.peek()); //23
 
         //printing 1st two elements
         System.out.println(st); //[1, 23]
